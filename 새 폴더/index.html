@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>★랜덤 녜힁 제조기★</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+</head>
+
+<body>
+  <script src="scripts.js"></script>
+  <div class="RealBody">
+    <div class="title">★랜덤 녜힁 제조기★</div>
+    <pre class="content" id="demo">여기에 녜힁 출력</pre>
+    <div class="mother">
+      <div class="btnmother">
+        <div class="btn"
+          onclick='document.getElementById("demo").innerHTML = bulkNyehuing(document.getElementById("amount").value, 2)'>
+          Click Me!</div>
+      </div>
+      <div class="btnmother">
+        <div class="btn"
+          onclick='document.getElementById("demo").innerHTML = bulkNyehuing(document.getElementById("amount").value, 3)'>
+          세글자</div>
+      </div>
+      <div class="btnmother">
+        <div class="btn"
+          onclick='document.getElementById("demo").innerHTML = bulkNyehuing(document.getElementById("amount").value, 6)'>
+          더욱 긴 녜힁</div>
+      </div>
+    </div>
+    <div class="inputmother">
+      <input class="content2" id="amount" placeholder="제조개수를 입력하세요"></input>
+    </div>
+  </div>
+</body>
+
+</html>

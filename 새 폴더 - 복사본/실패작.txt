@@ -1,0 +1,23 @@
+.titleshadow {
+  max-height: 20px;
+  padding-bottom :10px;
+  position: relative;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.4%;
+  user-select: none;
+  transform : rotate3d(1, 0, 0, 180deg);
+  opacity: 40%
+}
+
+.titleshadow::before {
+  content : "";
+  position :absolute;
+  top : 0;
+  left :0;
+  right :0;
+  bottom : 0;
+  box-shadow : inset 0px 27px 10px 0px #e3ecfa;
+  z-index: 1;
+}
